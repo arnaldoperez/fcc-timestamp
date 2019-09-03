@@ -6,7 +6,14 @@
      }
    else
      {
-       time= new Date(timestamp)
+       if(!isNaN(timestamp))
+         {
+           time= new Date(timestamp*1000)
+         }
+       else
+         {
+          time= new Date(timestamp) 
+         }
        if(!time)
          {
            //return {"unix":null , "utc":"Invalid Date"}
