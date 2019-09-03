@@ -8,9 +8,7 @@
      {
        if(!isNaN(timestamp))
          {
-           console.log(timestamp)
            time= new Date(timestamp*1000)
-           console.log(time)
          }
        else
          {
